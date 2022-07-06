@@ -1,0 +1,23 @@
+/* img-body-background url : https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg */
+
+/* Typeface used : Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Colors used */
+:root{
+  --font-color: #f3f3f3;
+  --bg-alpha: rgba(27, 27, 50, .8);
+  --bg-form: #1b1b32;
+  --btn-color: #37af65;
+}
+
+/* resets */
+*{
+  box-sizing: border-box;
+}
+
+/* Tag selectors */
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}

@@ -17,71 +17,85 @@
       <div class="form-container">
         <form action="" id="survey-form">
           <fieldset>
-            <label for="name" id="name-label">Name</label>
-            <input
-              type="text"
-              id="name"
-              required
-              placeholder="Enter your name"
-            />
-            <label for="email" id="email-label">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}%"
-              placeholder="Enter your Email"
-            />
-            <label for="number" id="number-label">Age(optional)</label>
-            <input
-              type="number"
-              name="age"
-              id="number"
-              placeholder="Age"
-              min="10"
-              max="99"
-            />
-            <p>Which option best describes your current role?</p>
-            <select name="description" id="dropdown">
-              <option value selected disabled>Select Current role</option>
-              <option value="student">Student</option>
-              <option value="full time job">Full Time Job</option>
-              <option value="full time learner">Full Time Learner</option>
-              <option value="prefer not to say">Prefer not to say</option>
-              <option value="other">Other</option>
-            </select>
+            <div class="form-group">
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}%"
+                placeholder="Enter your Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="number" id="number-label">Age(optional)</label>
+              <input
+                type="number"
+                name="age"
+                id="number"
+                placeholder="Age"
+                min="10"
+                max="99"
+              />
+            </div>
+            <div class="form-group">
+              <p>Which option best describes your current role?</p>
+              <select name="description" id="dropdown">
+                <option value selected disabled>Select Current role</option>
+                <option value="student">Student</option>
+                <option value="full time job">Full Time Job</option>
+                <option value="full time learner">Full Time Learner</option>
+                <option value="prefer not to say">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
           </fieldset>
           <fieldset>
             <div class="form-group">
               <p>Would you recommend freeCodeCamp to a friend?</p>
-              <input
-                type="radio"
-                name="recommendation"
-                id="definitely"
-                value="definitely"
-                checked
-              />
-              <label for="definitely">Definitely</label>
-              <input
-                type="radio"
-                name="recommendation"
-                id="maybe"
-                value="maybe"
-              />
-              <label for="maybe">Maybe</label>
-              <input
-                type="radio"
-                name="recommendation"
-                id="not-sure"
-                value="not sure"
-              />
-              <label for="not-sure">Not sure</label>
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    name="recommendation"
+                    id="definitely"
+                    value="definitely"
+                    checked
+                  />
+                  <label for="definitely">Definitely</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="recommendation"
+                    id="maybe"
+                    value="maybe"
+                  />
+                  <label for="maybe">Maybe</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="recommendation"
+                    id="not-sure"
+                    value="not sure"
+                  />
+                  <label for="not-sure">Not sure</label>
+                </li>
+              </ul>
             </div>
             <div class="form-group">
-              <label for="features"
-                >What is your favorite feature of freeCodeCamp?</label
-              >
+              <p>What is your favorite feature of freeCodeCamp?</p>
               <select name="features" id="dropdown">
                 <option value selected disabled>Select an option</option>
                 <option value="challenges">Challenges</option>
@@ -92,78 +106,102 @@
             </div>
             <div class="form-group">
               <p>What would you like to see improved? (Check all that apply)</p>
-              <input
-                type="checkbox"
-                name="imp1"
-                id="front-end"
-                value="Front-end projects"
-              />
-              <label for="front-end">Front-end projects</label>
-
-              <input
-                type="checkbox"
-                name="imp2"
-                id="back-end"
-                value="Back-end projects"
-              />
-              <label for="back-end">Back-end projects</label>
-
-              <input
-                type="checkbox"
-                name="imp3"
-                id="data-vis"
-                value="Data Visualization"
-              />
-              <label for="data-vis">Data Visualization</label>
-
-              <input
-                type="checkbox"
-                name="imp4"
-                id="challenges"
-                value="challenges"
-              />
-              <label for="challenges">Challenges</label>
-
-              <input
-                type="checkbox"
-                name="imp5"
-                id="open-source"
-                value="Open Source Community"
-              />
-              <label for="open-source">Open Source Community</label>
-
-              <input
-                type="checkbox"
-                name="imp6"
-                id="g-help"
-                value="Gitter help rooms"
-              />
-              <label for="g-help">Gitter help rooms</label>
-
-              <input type="checkbox" name="imp7" id="videos" value="Videos" />
-              <label for="videos">Videos</label>
-
-              <input
-                type="checkbox"
-                name="imp8"
-                id="c-meetups"
-                value="City Meetups"
-              />
-              <label for="c-meetups">City Meetups</label>
-
-              <input type="checkbox" name="imp9" id="wiki" value="Wiki" />
-              <label for="wiki">Wiki</label>
-
-              <input type="checkbox" name="imp10" id="forum" value="Forum" />
-              <label for="forum">Forum</label>
-
-              <input
-                type="checkbox"
-                name="imp11"
-                id="additionals"
-                value="Additional Courses"
-              />
-              <label for="additionals">Additional Courses</label>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp1"
+                    id="front-end"
+                    value="Front-end projects"
+                  />
+                  <label for="front-end">Front-end projects</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp2"
+                    id="back-end"
+                    value="Back-end projects"
+                  />
+                  <label for="back-end">Back-end projects</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp3"
+                    id="data-vis"
+                    value="Data Visualization"
+                  />
+                  <label for="data-vis">Data Visualization</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp4"
+                    id="challenges"
+                    value="challenges"
+                  />
+                  <label for="challenges">Challenges</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp5"
+                    id="open-source"
+                    value="Open Source Community"
+                  />
+                  <label for="open-source">Open Source Community</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp6"
+                    id="g-help"
+                    value="Gitter help rooms"
+                  />
+                  <label for="g-help">Gitter help rooms</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp7"
+                    id="videos"
+                    value="Videos"
+                  />
+                  <label for="videos">Videos</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp8"
+                    id="c-meetups"
+                    value="City Meetups"
+                  />
+                  <label for="c-meetups">City Meetups</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="imp9" id="wiki" value="Wiki" />
+                  <label for="wiki">Wiki</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp10"
+                    id="forum"
+                    value="Forum"
+                  />
+                  <label for="forum">Forum</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="imp11"
+                    id="additionals"
+                    value="Additional Courses"
+                  />
+                  <label for="additionals">Additional Courses</label>
+                </li>
+              </ul>
             </div>
             <div class="form-group">
               <p>Any comments or suggestions?</p>

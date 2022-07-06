@@ -33,7 +33,7 @@
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}%"
               placeholder="Enter your Email"
             />
-            <label for="age" id="number-label">Age(optional)</label>
+            <label for="number" id="number-label">Age(optional)</label>
             <input
               type="number"
               name="age"
@@ -53,6 +53,15 @@
               <option value="prefer not to say">Prefer not to say</option>
               <option value="other">Other</option>
             </select>
+          </fieldset>
+          <fieldset>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" name="recommendation" id="definitely" value="definitely" checked>
+            <label for="definitely">Definitely</label>
+            <input type="radio" name="recommendation" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label>
+            <input type="radio" name="recommendation" id="not-sure" value="not sure">
+            <label for="not-sure">Not sure</label>
           </fieldset>
         </form>
       </div>

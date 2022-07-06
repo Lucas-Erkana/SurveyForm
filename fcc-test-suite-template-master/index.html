@@ -41,6 +41,7 @@
               min="10"
               max="99"
             />
+            
             <p>Which option best describes your current role?</p>
             <select name="description" id="dropdown">
               <option value selected disabled>Select Current role</option>
@@ -52,7 +53,7 @@
             </select>
           </fieldset>
           <fieldset>
-            <div id="recommendation-div">
+            <div class="form-group">
               <p>Would you recommend freeCodeCamp to a friend?</p>
               <input
                 type="radio"
@@ -77,7 +78,7 @@
               />
               <label for="not-sure">Not sure</label>
             </div>
-            <div id="fcc-features">
+            <div class="form-group">
               <label for="features"
                 >What is your favorite feature of freeCodeCamp?</label
               >
@@ -89,7 +90,7 @@
                 <option value="open source">Open Source</option>
               </select>
             </div>
-            <div id="improvments-div">
+            <div class="form-group">
               <p>What would you like to see improved? (Check all that apply)</p>
               <input type="checkbox" name="imp1" id="front-end" />
               <label for="front-end">Front-end projects</label>

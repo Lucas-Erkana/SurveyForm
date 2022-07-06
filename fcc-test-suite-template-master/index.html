@@ -30,9 +30,8 @@
               name="email"
               id="email"
               required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}%"
-              placeholder="Enter your Email"
-            />
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}%"
+              placeholder="Enter your Email"/>
             <label for="number" id="number-label">Age(optional)</label>
             <input
               type="number"
@@ -42,9 +41,7 @@
               min="10"
               max="99"
             />
-            <label for="description"
-              >Which option best describes your current role?</label
-            >
+            <p>Which option best describes your current role?</p>
             <select name="description" id="dropdown">
               <option value selected disabled>Select Current role</option>
               <option value="student">Student</option>
@@ -126,6 +123,13 @@
 
               <input type="checkbox" name="imp11" id="additionals" />
               <label for="additionals">Additional Courses</label>
+            </div>
+            <div class="form-group">
+              <p>Any comments or suggestions?</p>
+              <textarea name="add-comments" id="add-comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
           </fieldset>
         </form>

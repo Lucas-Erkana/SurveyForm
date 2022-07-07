@@ -6,6 +6,7 @@
 /* Colors used */
 :root{
   --font-color: #f3f3f3;
+  --input-brd: #ced4da;
   --bg-alpha: rgba(27, 27, 50, .8);
   --bg-form: #1b1b32;
   --btn-color: #37af65;
@@ -25,7 +26,7 @@ ul {
   list-style: none;
 }
 
-fieldset, ul{
+fieldset, ul, h1, p{
   margin: 0;
   padding: 0;
 }
@@ -33,4 +34,40 @@ fieldset, ul{
 /* Tag selectors */
 body{
   margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 680px; 
+  margin-inline: auto;
+} 
+
+input, select, textarea{
+  border: 1px solid var(--input-brd);
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: auto;
+  display: inline;
+}
+
+/* id Selectors */
+#survey-form {
+  border: 1px solid black;
+  border-radius: 4px 4px 0 0;
+  padding: 2.5em 2em 4em 2em;
+}
+
+/* Class Selectors */
+.heading{
+  text-align: center;
+  padding: 2.5em 0 2em 0;
+}
+
+.form-group{
+  /* border: 1px solid red; */
+  padding-bottom: 1em;
 }

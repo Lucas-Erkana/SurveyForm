@@ -14,16 +14,23 @@
 /* resets */
 *{
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 fieldset{
   border: none;
-  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset, ul{
   margin: 0;
+  padding: 0;
 }
 
 /* Tag selectors */
 body{
-  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
